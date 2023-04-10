@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {Menu} from "antd";
 import {UserOutlined, ControlOutlined, SettingOutlined, CoffeeOutlined} from '@ant-design/icons';
-
+import { useNavigate } from "react-router-dom";
 
 const items = [
   {
@@ -33,22 +33,18 @@ const items = [
 
 function Navbar(){
   const [current, setCurrent] = useState('profile');
-  const onClick = (e) => {
+  const navigate = useNavigate();
 
+  const onClick = (e) => {
     console.log('click ', e);
     setCurrent(e.key);
+    navigate(e.item.props.href);
   };
 
   return (
-
-      <Menu style={{borderRadius:"10px"}} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}>
-
-        </Menu>
-
-
+    <Menu style={{borderRadius:"10px"}} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}>
+    </Menu>
   );
 };
-
-
 
 export default Navbar;
