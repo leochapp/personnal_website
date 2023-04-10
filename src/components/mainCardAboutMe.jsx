@@ -1,4 +1,4 @@
-import { FacebookOutlined,InstagramOutlined ,LinkedinOutlined } from '@ant-design/icons';
+import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 import { Avatar,Card, Col, Row, Button,Space } from 'antd';
 
 
@@ -27,6 +27,7 @@ function MainCard(){
       <a href={"https://www.linkedin.com/in/l%C3%A9opold-chappuis-840303215/"}><LinkedinOutlined  /></a>,
       <a href={"https://www.facebook.com/leopold.chappuis/"}><FacebookOutlined  /></a>,
       <a href={"https://www.instagram.com/leopold.chappuis/"}><InstagramOutlined /></a>,
+      <a href={"https://github.com/leochapp/"}><GithubOutlined /></a>,
     ]}
   >
     <Meta
