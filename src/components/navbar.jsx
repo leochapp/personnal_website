@@ -8,22 +8,25 @@ const items = [
     label: 'About me',
     key: 'profile',
     icon: <UserOutlined />,
+    href:'/',
   },
   {
     label: 'CV',
     key: 'cv',
     icon: <ControlOutlined />,
-    disabled: false,
+    href:'/cv',
   },
   {
     label: 'Experiences',
     key: 'experiences',
     icon: <SettingOutlined />,
+    href:'/experiences',
   },
   {
     label: 'Contact',
     icon: <CoffeeOutlined />,
     key: 'contact',
+    href: '/contact'
   },
 
 ];
@@ -31,6 +34,7 @@ const items = [
 function Navbar(){
   const [current, setCurrent] = useState('profile');
   const onClick = (e) => {
+
     console.log('click ', e);
     setCurrent(e.key);
   };

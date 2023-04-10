@@ -41,8 +41,8 @@ function MainCard(){
     <Card title={<b>Myself</b>} bordered={true} style={{ width: 300 }}>
         <p>Who I am and what I'm doing.</p>
         <Space wrap>
-        <Button className={"mainbutton"} href={"https://lchappuis.fr"} type="primary">CV</Button>
-        <Button className={"mainbutton"} href={"https://lchappuis.fr"} type="primary">Experiences</Button>
+        <Button className={"mainbutton"} href={"/cv"} type="primary">CV</Button>
+        <Button className={"mainbutton"} href={"/experiences"} type="primary">Experiences</Button>
         </Space>
         <br/>
         <br/>

@@ -1,28 +1,30 @@
 import 'antd/dist/reset.css';
 import Profile from './pages/profile';
-import {Layout} from "antd";
+import { Layout } from "antd";
 import Navbar from "./components/navbar";
-import Sider from "antd/es/layout/Sider";
-import {Content, Footer, Header} from "antd/es/layout/layout";
+import { Content, Footer, Header } from "antd/es/layout/layout";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Contact from "./pages/contact";
 
 function LayoutSite() {
-
-    return (
-
+  return (
+    <Router>
       <Layout className={"mainpage"}>
-          <Header className={"headermainpage"} > <Navbar /> </Header>
-          <Content style={{backgroundColor:"inherit"}}>
-              <Profile/>
-          </Content>
-          <Footer className={"footermainpage"} >Personnal website ©2023 Created by Léopold Chappuis</Footer>
+        <Header className={"headermainpage"} >
+          <Navbar />
+        </Header>
+        <Content style={{ backgroundColor: "inherit" }}>
+          <Routes>
+            <Route path='/' element={<Profile />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </Content>
+        <Footer className={"footermainpage"} >
+          Personnal website ©2023 Created by Léopold Chappuis
+        </Footer>
       </Layout>
-    )
-
+    </Router>
+  );
 }
 
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 export default LayoutSite;
