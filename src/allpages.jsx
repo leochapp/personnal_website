@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contact from "./pages/contact";
 import LegalMentions from "./pages/legalMentions";
 import { useEffect, useState } from 'react';
+import CvPage from "./pages/cpPage";
+
 
 function LayoutSite() {
   const [isReady, setIsReady] = useState(false);
@@ -34,7 +36,7 @@ function LayoutSite() {
             <Routes>
               <Route path='/' element={<Profile />} />
               <Route path='/contact' element={<Contact />} />
-              <Route path='/cv' element={<Contact />} />
+              <Route path='/cv' element={<CvPage/>} />
               <Route path='/experiences' element={<Contact />} />
               <Route path='/legal' element={<LegalMentions />} />
             </Routes>
