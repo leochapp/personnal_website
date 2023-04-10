@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    dimgrey,
+    floralwhite)
+}
+
+.mainpage{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    dimgrey,
+    floralwhite)
+}
+.footermainpage{
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    dimgrey,
+    floralwhite)
+}
+
+.headermainpage{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* override code */
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected{
+
+  color:#836A55;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after{
+  border-bottom-color: #836A55;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after{
+  border-bottom-color: #493626;
+
+}
