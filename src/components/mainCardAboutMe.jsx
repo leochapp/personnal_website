@@ -5,7 +5,6 @@ import { Avatar,Card, Col, Row, Button,Space } from 'antd';
 const { Meta } = Card;
 
 function MainCard(){
-    console.log(window.innerWidth);
 
 
     return(
